@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1589761772 source:e:\info\tema3_pooabi\main.cpp
+	<iostream>
+
+1589768370 source:e:\info\tema3_pooabi\masina.cpp
+	"Masina.h"
+
+1589770077 e:\info\tema3_pooabi\masina.h
+	<string>
+
+1589769425 source:e:\info\tema3_pooabi\masina_compacta.cpp
+	"Masina_compacta.h"
+
+1589769240 e:\info\tema3_pooabi\masina_compacta.h
+	"Masina.h"
+
+1589769353 source:e:\info\tema3_pooabi\masina_mica.cpp
+	"Masina_mica.h"
+
+1589769369 e:\info\tema3_pooabi\masina_mica.h
+	"Masina.h"
+
+1589769380 source:e:\info\tema3_pooabi\masina_mini.cpp
+	"Masina_Mini.h"
+
+1589769392 e:\info\tema3_pooabi\masina_mini.h
+	"Masina.h"
+
+1589769454 source:e:\info\tema3_pooabi\masina_monovolum.cpp
+	"Masina_Monovolum.h"
+
+1589769460 e:\info\tema3_pooabi\masina_monovolum.h
+	"Masina.h"
+
