@@ -9,18 +9,19 @@ class Masina_mica: public Masina
 public:
 
     string& GetCuloare();
-    const string& GetNume() const;
-    const int& GetAnFabricatie() const;
-    const bool& MasinaNoua() const;
-    const double& GetPret() const;
+    string& GetNume();
+    int& GetAnFabricatie();
+    bool& MasinaNoua();
+    double& GetPret();
 
     void SetCuloare(const string& color);
-
-    void citire(istream &in);
-    void afisare(ostream &out) const;
-
     Masina_mica(const string& name, const int& an_fabricatie, const string& culoare, const bool& nou, const double& prett);
     ~Masina_mica();
+
+    Masina_mica& operator=(const Masina_mica& masina_mica);
+
+    friend istream& operator >> (istream& in, Masina_mica& masina_mica);
+    void Afisare() const;
 
 };
 

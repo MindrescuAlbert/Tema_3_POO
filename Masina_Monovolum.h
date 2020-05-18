@@ -11,18 +11,22 @@ public:
     ~Masina_Monovolum();
 
     string& GetCuloare();
-    const string& GetNume() const;
-    const int& GetAnFabricatie() const;
-    const bool& MasinaNoua() const;
     void SetCuloare(const string& color);
-    const string& GetModel() const;
-    const double& GetPret() const;
-    const double& GetPretRedus(const int& an_cumparare, const int& luna_cumparare) const;
+    string& GetNume();
+    int& GetAnFabricatie();
+    bool& MasinaNoua();
+    string& GetModel();
+    double& GetPret();
+    double GetPretRedus(const int& an_cumparare, const int& luna_cumparare);
+
+    Masina_Monovolum& operator=(const Masina_Monovolum& masina_Monovolum);
+    friend istream& operator >> (istream& in, Masina_Monovolum& masina_monovolum);
+    void Afisare() const;
 
 private:
 
-    const int nr_pers;
-    const string model;
+    int nr_pers;
+    string model;
 };
 
 #endif // MASINA_MONOVOLUM_H

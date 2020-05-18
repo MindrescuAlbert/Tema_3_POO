@@ -44,6 +44,7 @@
 		<Unit filename="Masina_compacta.h" />
 		<Unit filename="Masina_mica.cpp" />
 		<Unit filename="Masina_mica.h" />
+		<Unit filename="Vanzare.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

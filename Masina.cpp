@@ -11,15 +11,14 @@ Masina::~Masina()
 
 }
 
-istream& operator >> (istream &in, Masina& masina)
+const int& Masina::GetNrGeamuri() const
 {
-    masina.citire(in);
-    return in;
+    return geamuri;
 }
 
-ostream& operator << (ostream &out, const Masina& masina)
+const int& Masina::GetNrRoti() const
 {
-    masina.afisare(out);
-    return out;
+    return roti;
 }
+
 

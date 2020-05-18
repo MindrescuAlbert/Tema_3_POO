@@ -1,34 +1,50 @@
 # depslib dependency file v1.0
-1589761772 source:e:\info\tema3_pooabi\main.cpp
+1589828770 source:e:\info\tema3_pooabi\main.cpp
+	<iostream>
+	"Masina_mica.h"
+	"Masina_Mini.h"
+	"Masina_compacta.h"
+	"Masina_Monovolum.h"
+	"Vanzare.h"
+
+1589813086 source:e:\info\tema3_pooabi\masina.cpp
+	"Masina.h"
+
+1589812477 e:\info\tema3_pooabi\masina.h
+	<string>
 	<iostream>
 
-1589768370 source:e:\info\tema3_pooabi\masina.cpp
-	"Masina.h"
-
-1589770077 e:\info\tema3_pooabi\masina.h
-	<string>
-
-1589769425 source:e:\info\tema3_pooabi\masina_compacta.cpp
+1589822218 source:e:\info\tema3_pooabi\masina_compacta.cpp
 	"Masina_compacta.h"
 
-1589769240 e:\info\tema3_pooabi\masina_compacta.h
+1589813035 e:\info\tema3_pooabi\masina_compacta.h
 	"Masina.h"
 
-1589769353 source:e:\info\tema3_pooabi\masina_mica.cpp
+1589822208 source:e:\info\tema3_pooabi\masina_mica.cpp
 	"Masina_mica.h"
 
-1589769369 e:\info\tema3_pooabi\masina_mica.h
+1589825226 e:\info\tema3_pooabi\masina_mica.h
 	"Masina.h"
 
-1589769380 source:e:\info\tema3_pooabi\masina_mini.cpp
+1589822211 source:e:\info\tema3_pooabi\masina_mini.cpp
 	"Masina_Mini.h"
 
-1589769392 e:\info\tema3_pooabi\masina_mini.h
+1589813051 e:\info\tema3_pooabi\masina_mini.h
 	"Masina.h"
 
-1589769454 source:e:\info\tema3_pooabi\masina_monovolum.cpp
+1589822225 source:e:\info\tema3_pooabi\masina_monovolum.cpp
 	"Masina_Monovolum.h"
 
-1589769460 e:\info\tema3_pooabi\masina_monovolum.h
+1589813073 e:\info\tema3_pooabi\masina_monovolum.h
 	"Masina.h"
+
+1589815025 source:e:\info\tema3_pooabi\vanzare.cpp
+
+1589829016 e:\info\tema3_pooabi\vanzare.h
+	<vector>
+	"Masina.h"
+	"Masina_mica.h"
+	"Masina_Mini.h"
+	"Masina_compacta.h"
+	"Masina_Monovolum.h"
 

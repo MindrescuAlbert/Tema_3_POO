@@ -2,6 +2,7 @@
 #define MASINA_H
 
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -10,27 +11,29 @@ class Masina
 public:
 
     virtual string& GetCuloare() = 0;
-    virtual const string& GetNume() const = 0;
-    virtual const int& GetAnFabricatie() const = 0;
-    virtual const bool& MasinaNoua() const = 0;
-    virtual const double& GetPret() const = 0;
-    virtual void SetCuloare(const string& color) const = 0;
+    virtual string& GetNume() = 0;
+    virtual int& GetAnFabricatie() = 0;
+    virtual bool& MasinaNoua() = 0;
+    virtual double& GetPret() = 0;
+    virtual void SetCuloare(const string& color) = 0;
+    virtual const int& GetNrRoti() const;
+    virtual const int& GetNrGeamuri() const;
+
     Masina(const string& name, const int& an_fabr, const string& color, const bool& nouu, const double& prett);
     virtual ~Masina();
 
-    friend istream& operator >> (istream& in, Masina& masina);
-    friend ostream& operator << (ostream& out, const Masina& masina);
-
-    void afisare(ostream &out) const = 0;
-    void citire(istream &in) = 0;
+    virtual void Afisare() const = 0;
 
 protected:
 
-            string culoare;
-    const   string nume;
-    const   int an_fabricatie;
-    const   bool nou;
-    const   double pret;
+    string culoare;
+    string nume;
+    int an_fabricatie;
+    bool nou;
+    double pret;
+
+    const int roti = 4;
+    const int geamuri = 4;
 };
 
 #endif // MASINA_H

@@ -6,12 +6,12 @@ Masina_compacta::Masina_compacta(const string& name, const int& an, const string
 
 }
 
-const string& Masina_compacta::GetNume() const
+string& Masina_compacta::GetNume()
 {
     return nume;
 }
 
-const int& Masina_compacta::GetAnFabricatie() const
+int& Masina_compacta::GetAnFabricatie()
 {
     return an_fabricatie;
 }
@@ -22,7 +22,7 @@ string& Masina_compacta::GetCuloare()
 
 }
 
-const bool& Masina_compacta::MasinaNoua() const
+bool& Masina_compacta::MasinaNoua()
 {
     return nou;
 }
@@ -33,7 +33,7 @@ void Masina_compacta::SetCuloare(const string& color)
     culoare = color;
 }
 
-const double& Masina_compacta::GetPret() const
+double& Masina_compacta::GetPret()
 {
     return pret;
 }
@@ -42,3 +42,26 @@ Masina_compacta::~Masina_compacta()
 {
     culoare.clear();
 }
+
+Masina_compacta& Masina_compacta::operator=(const Masina_compacta& masina_compacta)
+{
+    culoare = masina_compacta.culoare;
+    nume = masina_compacta.nume;
+    an_fabricatie = masina_compacta.an_fabricatie;
+    nou = masina_compacta.nou;
+    pret = masina_compacta.pret;
+    return *this;
+}
+
+void Masina_compacta::Afisare() const
+{
+    cout << "\n" <<  "Masina COMPACTA" << "\n" << "Model: " << nume << "\n" << "An fabricatie: " << an_fabricatie << "\n" << "Culoare: " << culoare <<
+            "\n" << "Noua: " << nou << "\n" << "Pret: " << pret << "\n" << "Numar roti: " << roti << "\n" << "Numar geamuri: " << geamuri << "\n";
+}
+
+istream& operator >> (istream& in, Masina_compacta& masina_compacta)
+{
+
+    in >> masina_compacta.nume >> masina_compacta.an_fabricatie >> masina_compacta.culoare >> masina_compacta.nou >> masina_compacta.pret;
+}
+

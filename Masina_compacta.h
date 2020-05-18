@@ -11,12 +11,16 @@ public:
     ~Masina_compacta();
 
     string& GetCuloare();
-    const string& GetNume() const;
-    const int& GetAnFabricatie() const;
-    const bool& MasinaNoua() const;
-    const double& GetPret() const;
+    string& GetNume();
+    int& GetAnFabricatie();
+    bool& MasinaNoua();
+    double& GetPret();
 
     void SetCuloare(const string& color);
+
+    Masina_compacta& operator=(const Masina_compacta& masina_compacta);
+    friend istream& operator >> (istream& in, Masina_compacta& masina_compacta);
+    void Afisare() const;
 };
 
 #endif // MASINA_COMPACTA_H
